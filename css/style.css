@@ -1958,7 +1958,6 @@ transition: all 0.5s;
 
 @media only screen and (max-width: 767px) {
 	.hero__text {
-		margin-top: 180px;
 		text-align: center;
 	}
 	.hero__text .title{
@@ -2017,7 +2016,7 @@ transition: all 0.5s;
 	.canvas__open {
 		display: block;
 		font-size: 22px;
-		color: var(--primary-color);
+		color: red;
 		height: 35px;
 		width: 35px;
 		line-height: 35px;
@@ -2027,6 +2026,9 @@ transition: all 0.5s;
 		position: absolute;
 		right: 15px;
 		top: 35px;
+	}
+	.canvas__open:active{
+		color: #0072b1;
 	}
 	.offcanvas-menu-overlay {
 		position: fixed;
