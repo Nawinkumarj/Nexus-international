@@ -1371,7 +1371,7 @@ ul.dropdown li ul.dropdown-lists {
 }
 
 .about__item h4 {
-	color: #323232;
+	color: #000000;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
@@ -1397,6 +1397,7 @@ ul.dropdown li ul.dropdown-lists {
 	font-weight: 600;
 	font-family: var(--font);
     margin-bottom: 15px;
+	color: var(--secondary-color);
 }
 
 .card-text {
