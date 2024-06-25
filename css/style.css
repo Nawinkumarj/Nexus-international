@@ -391,7 +391,7 @@ transition: all 0.5s;
 	left: 0;
 	top: 56px;
 	width: 180px;
-	background: #323232;
+	background: #32323293;
 	text-align: left;
 	padding: 5px 0;
 	z-index: 9;
@@ -424,6 +424,45 @@ transition: all 0.5s;
 
 .header_menu ul li .dropdown li a:after {
 	display: none;
+}
+/* second dropdown */
+
+ul.dropdown-lists {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background: #323232a2;
+	width: 100%;
+}
+
+li:hover > ul.dropdown-lists {
+    display: block;
+}
+
+ul.dropdown-lists li {
+    position: relative;
+}
+
+ul.dropdown-lists li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+	border-bottom: 0.2px solid #4e4e4e;
+}
+
+ul.dropdown li ul.dropdown-lists {
+    top: 0;
+    left: 100%;
+    margin-left: 1px;
+}
+.header_menu .dropdown-lists .active > a,
+.header_menu .dropdown-lists .active > a:hover {
+    background-color: #e6be3a;
+	color: var(--secondary-color);
+	font-weight: 600;
 }
 
 .header_menu ul li a {
@@ -579,7 +618,7 @@ transition: all 0.5s;
 	border-radius: 20px;
 	bottom: -2rem;
 	width: 335px;
-	max-height: 235px;
+	max-height: 250px;
 	margin-inline: auto;
 	padding: 1.5rem 2rem;
 	background: white;
@@ -647,21 +686,6 @@ transition: all 0.5s;
 }
 .cardbtn:hover {
 	color: var(--secondary-color) !important;
-}
-.disablebtn {
-	font-size: 12px;
-	color: var(--secondary-color);
-	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	padding: 4px 0;
-	position: relative;
-	border: none;
-	cursor: no-drop;
-	background: none;
-}
-.disablebtn a{
-	color: var(--secondary-color);
 }
 @media (max-width:787px){
 	.services_list{
@@ -986,16 +1010,37 @@ transition: all 0.5s;
 
 	/* sdlc starts */
 	.sdlc-img {
-		margin: 30% 10%;
+		margin: 10% 10%;
 	}
 
+	.sdlc-img img{
+		border-radius: 80px 20px;
+		box-shadow: 0px 2px 45px var(--accent-color);
+	}
 	/* dlc starts */
 	.dlc-img{
-		margin: 30% 10%;
+		margin: 10% 10%;
+	}
+	.dlc-img img{
+		border-radius: 80px 20px;
+		box-shadow: 0px 2px 45px var(--accent-color);
 	}
 
 	/* trade finance ends */
 
+	/* CFAS starts */
+	.para-text span {
+		color: var(--accent-color);
+	}
+	/* CFAS ends */
+	/* CFA starts */
+	.cfa-img {
+		max-height: 900px;
+		height: 600px;
+		width: 900px;
+		margin-left: 10%;
+		overflow: hidden;
+	}
 	/* Call */
 
 .call__text .section-title {
@@ -2016,7 +2061,7 @@ transition: all 0.5s;
 	.canvas__open {
 		display: block;
 		font-size: 22px;
-		color: red;
+		color: var(--accent-color);
 		height: 35px;
 		width: 35px;
 		line-height: 35px;
@@ -2026,9 +2071,6 @@ transition: all 0.5s;
 		position: absolute;
 		right: 15px;
 		top: 35px;
-	}
-	.canvas__open:active{
-		color: #0072b1;
 	}
 	.offcanvas-menu-overlay {
 		position: fixed;
