@@ -1029,11 +1029,8 @@ ul.dropdown li ul.dropdown-lists {
 	/* CFAS ends */
 	/* CFA starts */
 	.cfa-img {
-		max-height: 900px;
-		height: 600px;
-		width: 900px;
-		margin-left: 10%;
-		overflow: hidden;
+		height: 50% !important;
+		width: 100%;
 	}
 	/* Call */
 
@@ -1529,7 +1526,7 @@ p {
 }
 
 .contact__form__text form textarea {
-	width: 450px;
+	width: 45%;
 	height: 120px;
 	border: 1px solid #ebebeb;
 	border-radius: 2px;
@@ -1850,7 +1847,7 @@ p {
 		text-align: center;
 	}
 	.hero__text .title{
-		font-size: 52px;
+		font-size: 48px;
 		width: auto;
 	}
 	.home_about__text {
